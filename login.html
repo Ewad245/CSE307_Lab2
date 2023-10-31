@@ -1,28 +1,47 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DangNhap</title>
-</head>
-<body>
-  <header>
-    <div style="text-align:center">
-      <b>ĐĂNG NHẬP</b>
-  </header>
-  <section>
+  </head>
+  <body>
+    <header>
+      <div style="text-align: center">
+        <b>ĐĂNG NHẬP</b>
+      </div>
+    </header>
+    <section>
       <form action="#" method="post" accept-charset="utf-8" name="dangnhap">
-        <label for="Name">Tên đăng nhập</label>
-        <input type="text" name="name" value="" required="required" /> <br />
-        <label for="Password">Mật khẩu</label>
-        <input type="password" name="Pass" required="required" />
-        <div style="text-align:center">
-          <input type="button" name="Đăng nhập" id="" value="Đăng nhập" />
-        </div>
-        <div style="text-align:right">
-          <a href="changepassword.html"><i>Đổi mật khẩu</i></a>
-        </div>
-  </form>
-  </section>
-
-</body>
+        <table>
+          <tr>
+            <td>
+              <label for="Name">Tên đăng nhập</label>
+            </td>
+            <td>
+              <input type="text" name="name" value="" required="required" />
+              <br />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="Password">Mật khẩu</label>
+            </td>
+            <td>
+              <input type="password" name="Pass" required="required" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <div style="text-align: center">
+                <input type="button" name="Đăng nhập" id="" value="Đăng nhập" />
+              </div>
+              <div style="text-align: right">
+                <a href="changepassword.html"><i>Đổi mật khẩu</i></a>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </section>
+  </body>
 </html>

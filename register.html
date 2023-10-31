@@ -1,117 +1,145 @@
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DangNhap</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DangNhap</title>
-</head>
-
-<body>
-  <header>
-    <div style="text-align:center">
-      <b>ĐĂNG KÝ THÀNH VIÊN</b>
-    </div>
-  </header>
-  <section>
-    <form action="#">
-      <fieldset>
-        <legend>Thông tin cá nhân</legend>
-        <p>
-          Họ và tên:
-          <input type="text" name="Full name" />
-        </p>
-        <p>
-          Ngày sinh:
-          <select name="Day of birth">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
-            <option value="13">13</option>
-            <option value="14">14</option>
-            <option value="15">15</option>
-            <option value="16">16</option>
-            <option value="17">17</option>
-            <option value="18">18</option>
-            <option value="19">19</option>
-            <option value="20">20</option>
-            <option value="21">21</option>
-            <option value="22">22</option>
-            <option value="23">23</option>
-            <option value="24">24</option>
-            <option value="25">25</option>
-            <option value="26">26</option>
-            <option value="27">27</option>
-            <option value="28">28</option>
-            <option value="29">29</option>
-            <option value="30">30</option>
-            <option value="31">31</option>
-          </select>
-          <label for="Month">Tháng</label>
-          <select name="Month of birth">
-            <option value="01">Jan</option>
-            <option value="02">Feb</option>
-            <option value="03">Mar</option>
-            <option value="04">Apr</option>
-            <option value="05">May</option>
-            <option value="06">Jun</option>
-            <option value="07">Jul</option>
-            <option value="08">Aug</option>
-            <option value="09">Sep</option>
-            <option value="10">Oct</option>
-            <option value="11">Nov</option>
-            <option value="12">Dec</option>
-          </select>
-          <label for="Year">Năm</label>
-          <input type="text" name="Year" pattern="^[0-9]$" />
-        </p>
-        <p>
-          <label for="Gender">Giới tính</label>
-          <input type="radio" name="Gender" value="Nam">
-          <label for="Male">Nam</label>
-          <input type="radio" name="Gender" value="Nữ">
-          <label for="Female">Nữ</label>
-        </p>
-        <div>
-          Địa chỉ:
-          <textarea name="Address" cols="40" rows="8"></textarea>
-        </div>
-        <p>Điện thoại
-          <input type="text" name="PhoneNumber">
-        </p>
-        <p>
-          Email:
-          <input type="text" name="Email">
-        </p>
-      </fieldset>
-      <fieldset>
-        <legend>Thông tin đăng nhập</legend>
-        <p>Tên đăng nhập:
-          <input type="text" name="LoginName" required>
-        </p>
-        <p>Mật khẩu:
-          <input type="text" name="Password" required>
-        </p>
-        <p>Nhập lại mật khẩu:
-          <input type="text" name="PasswordConfirm" required>
-        </p>
-        <div style="text-align: center;">
-          <input type="button" value="Đăng ký" name="Register">
-          <input type="button" value="Hủy" name="Cancel">
-        </div>
-      </fieldset>
-    </form>
-
-  </section>
-
-</body>
-
+  <body>
+    <header>
+      <div style="text-align: center">
+        <b>ĐĂNG KÝ THÀNH VIÊN</b>
+      </div>
+    </header>
+    <section>
+      <form action="#">
+        <fieldset>
+          <legend>Thông tin cá nhân</legend>
+          <table>
+            <tr>
+              <td>Họ và tên:</td>
+              <td>
+                <input type="text" name="Full name" />
+              </td>
+            </tr>
+            <tr>
+              <td>Ngày sinh:</td>
+              <td>
+                <select name="Day of birth">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                  <option value="31">31</option>
+                </select>
+                <label for="Month">Tháng</label>
+                <select name="Month of birth">
+                  <option value="01">Jan</option>
+                  <option value="02">Feb</option>
+                  <option value="03">Mar</option>
+                  <option value="04">Apr</option>
+                  <option value="05">May</option>
+                  <option value="06">Jun</option>
+                  <option value="07">Jul</option>
+                  <option value="08">Aug</option>
+                  <option value="09">Sep</option>
+                  <option value="10">Oct</option>
+                  <option value="11">Nov</option>
+                  <option value="12">Dec</option>
+                </select>
+                <label for="Year">Năm</label>
+                <input type="text" name="Year" pattern="^[0-9]$" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="Gender">Giới tính</label>
+              </td>
+              <td>
+                <input type="radio" name="Gender" value="Nam" />
+                <label for="Male">Nam</label>
+                <input type="radio" name="Gender" value="Nữ" />
+                <label for="Female">Nữ</label>
+              </td>
+            </tr>
+            <tr>
+              <td>Địa chỉ:</td>
+              <td>
+                <textarea name="Address" cols="40" rows="8"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>Điện thoại:</td>
+              <td>
+                <input type="text" name="PhoneNumber" />
+              </td>
+            </tr>
+            <tr>
+              <td>Email:</td>
+              <td>
+                <input type="text" name="Email" />
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+        <fieldset>
+          <legend>Thông tin đăng nhập</legend>
+          <table>
+            <tr>
+              <td>Tên đăng nhập:</td>
+              <td>
+                <input type="text" name="LoginName" required />
+              </td>
+            </tr>
+            <tr>
+              <td>Mật khẩu:</td>
+              <td>
+                <input type="text" name="Password" required />
+              </td>
+            </tr>
+            <tr>
+              <td>Nhập lại mật khẩu:</td>
+              <td>
+                <input type="text" name="PasswordConfirm" required />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <div style="text-align: center">
+                  <input type="button" value="Đăng ký" name="Register" />
+                  <input type="button" value="Hủy" name="Cancel" />
+                </div>
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+      </form>
+    </section>
+  </body>
 </html>
